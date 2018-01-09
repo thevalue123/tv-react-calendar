@@ -100,7 +100,7 @@ export default class Days extends PureComponent {
         offset={this.offset}
         wrap
       >
-        {days}t
+        {days}
       </Flex>
     );
   }
