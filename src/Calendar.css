@@ -61,6 +61,22 @@
 .react-calendar__month-view__days__day--neighboringMonth {
   color: #969696;
 }
+.react-calendar__month-view__days__day--viewing {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #A5DEE4;
+  display: inline-block;
+  margin: 0 2px;
+}
+.react-calendar__month-view__days__day--auction {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #E87A90;
+  display: inline-block;
+  margin: 0 2px;
+}
 .react-calendar__year-view .react-calendar__tile,
 .react-calendar__decade-view .react-calendar__tile,
 .react-calendar__century-view .react-calendar__tile {

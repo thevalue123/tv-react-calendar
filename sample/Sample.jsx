@@ -14,6 +14,8 @@ export default class Sample extends Component {
   render() {
     const { value } = this.state;
 
+    let saleDates = [1,2,3]
+
     return (
       <div className="Sample">
         <header>
@@ -25,7 +27,7 @@ export default class Sample extends Component {
               onChange={this.onChange}
               showWeekNumbers
               value={value}
-              saleDate=[1,2,3]
+              saleDates={saleDates}
             />
           </main>
         </div>

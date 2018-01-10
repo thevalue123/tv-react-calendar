@@ -46,6 +46,10 @@ const Day = ({
   >
     <time dateTime={`${getISOLocalDate(date)}T00:00:00.000`}>
       {getDay(date)}
+      <div>
+        <span className="react-calendar__month-view__days__day--viewing"></span>
+        <span className="react-calendar__month-view__days__day--auction"></span>
+      </div>
     </time>
     {typeof tileContent === 'function' ? tileContent({ date, view: 'month' }) : tileContent}
   </button>
