@@ -25,6 +25,7 @@ export default class Sample extends Component {
               onChange={this.onChange}
               showWeekNumbers
               value={value}
+              saleDate=[1,2,3]
             />
           </main>
         </div>
