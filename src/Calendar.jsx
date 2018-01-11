@@ -346,13 +346,24 @@ export default class Calendar extends Component {
             onClickWeekNumber={this.props.onClickWeekNumber}
             showNeighboringMonth={this.props.showNeighboringMonth}
             showWeekNumbers={this.props.showWeekNumbers}
-            saleDates={this.props.saleDates}
+            saleDates={this.getSaleDates()}
             {...commonProps}
           />
         );
       default:
         throw new Error(`Invalid view: ${view}.`);
     }
+  }
+
+  getSaleDates() {
+    let {
+      saleDates = {
+        viewingDates: [],
+        auctionDates: []
+      }
+    } = this.props;    
+
+    return saleDates
   }
 
   renderNavigation() {

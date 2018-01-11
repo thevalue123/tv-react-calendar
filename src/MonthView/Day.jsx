@@ -47,23 +47,14 @@ const Day = ({
   >
     <time dateTime={`${getISOLocalDate(date)}T00:00:00.000`}>
       {getDay(date)}
-      {getDot(salesDots)}
+      <div className="react-calendar__month-view__days__day--dot">
+        {showDot('viewing', salesDots.showPreviewDot)}
+        {showDot('auction', salesDots.showAuctionDot)}
+      </div>
     </time>
     {typeof tileContent === 'function' ? tileContent({ date, view: 'month' }) : tileContent}
   </button>
 );
-
-function getDot(salesDots) {
-
-  if(salesDots.showPreviewDot || salesDots.showAuctionDot) {
-    return ( 
-      <div>
-        {showDot('viewing', salesDots.showPreviewDot)}
-        {showDot('auction', salesDots.showAuctionDot)}
-      </div>
-    )
-  }
-}
 
 function showDot(type, show) {
   if(show) {
