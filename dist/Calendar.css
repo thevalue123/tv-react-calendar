@@ -117,4 +117,3 @@ button.react-calendar__tile--active:not([disabled]):focus {
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
-}
