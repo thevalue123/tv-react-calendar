@@ -24,6 +24,7 @@ const Day = ({
   style,
   tileClassName,
   tileContent,
+  salesDots,
 }) => (
   <button
     className={mergeClassNames(
@@ -46,10 +47,23 @@ const Day = ({
   >
     <time dateTime={`${getISOLocalDate(date)}T00:00:00.000`}>
       {getDay(date)}
+      <div className="react-calendar__month-view__days__day--dot">
+        {showDot('viewing', salesDots.showPreviewDot)}
+        {showDot('auction', salesDots.showAuctionDot)}
+      </div>
     </time>
     {typeof tileContent === 'function' ? tileContent({ date, view: 'month' }) : tileContent}
   </button>
 );
+
+function showDot(type, show) {
+  if(show) {
+    let className = `react-calendar__month-view__days__day--${type}`
+    return (
+      <span className={className}></span>
+    )
+  }
+}
 
 Day.propTypes = {
   currentMonthIndex: PropTypes.number.isRequired,

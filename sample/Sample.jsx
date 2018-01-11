@@ -14,6 +14,14 @@ export default class Sample extends Component {
   render() {
     const { value } = this.state;
 
+    let viewingDates = ["2019-01-03","2018-01-04","2018-01-05","2018-01-06","2018-01-07"]
+    let auctionDates = ["2018-01-06","2018-01-07"]
+
+    let saleDates = {
+      viewingDates: viewingDates,
+      auctionDates: auctionDates
+    }
+
     return (
       <div className="Sample">
         <header>
@@ -25,7 +33,7 @@ export default class Sample extends Component {
               onChange={this.onChange}
               showWeekNumbers
               value={value}
-              saleDate=[1,2,3]
+              saleDates={saleDates}
             />
           </main>
         </div>

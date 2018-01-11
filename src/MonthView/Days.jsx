@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment'
 
 import Flex from '../Flex';
 import Day from './Day';
@@ -64,6 +65,12 @@ export default class Days extends PureComponent {
   }
 
   render() {
+
+    // console.log('Days Component: ')
+
+    let saleDates = this.props.saleDates
+    // console.log(saleDates)
+
     const {
       start, end, year, monthIndex,
     } = this;
@@ -80,6 +87,16 @@ export default class Days extends PureComponent {
     for (let day = start; day <= end; day += 1) {
       const date = new Date(year, monthIndex, day);
 
+      let calendar_date = moment(date).format('YYYY-MM-DD')
+
+      let showPreviewDot = saleDates.viewingDates.indexOf(calendar_date) != -1 ? true:false
+      let showAuctionDot = saleDates.auctionDates.indexOf(calendar_date) != -1 ? true:false        
+
+      let salesDots = {
+        showPreviewDot: showPreviewDot,
+        showAuctionDot: showAuctionDot
+      }
+
       days.push(
         <Day
           classes={getTileClasses({
@@ -88,6 +105,7 @@ export default class Days extends PureComponent {
           currentMonthIndex={monthIndex}
           date={date}
           key={day}
+          salesDots={salesDots}
           {...dayProps}
         />,
       );
