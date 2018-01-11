@@ -61,6 +61,10 @@
 .react-calendar__month-view__days__day--neighboringMonth {
   color: #969696;
 }
+.react-calendar__month-view__days__day--dot {
+  height: 6px;
+  display: block;
+}
 .react-calendar__month-view__days__day--viewing {
   border-radius: 50%;
   width: 6px;
