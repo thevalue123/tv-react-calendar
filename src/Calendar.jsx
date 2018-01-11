@@ -346,6 +346,7 @@ export default class Calendar extends Component {
             onClickWeekNumber={this.props.onClickWeekNumber}
             showNeighboringMonth={this.props.showNeighboringMonth}
             showWeekNumbers={this.props.showWeekNumbers}
+            saleDates={this.props.saleDates}
             {...commonProps}
           />
         );

@@ -61,6 +61,7 @@ export default class MonthView extends PureComponent {
     return (
       <Days
         calendarType={this.calendarType}
+        saleDates={this.props.saleDates}
         {...childProps}
       />
     );

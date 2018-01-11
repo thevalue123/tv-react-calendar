@@ -14,7 +14,17 @@ export default class Sample extends Component {
   render() {
     const { value } = this.state;
 
-    let saleDates = [1,2,3]
+
+    // let viewingDates = ["2018-01-03","2018-01-04","2018-01-05","2018-01-06","2018-01-07"]
+    // let auctionDates = ["2018-01-06","2018-01-07"]
+    // let saleDates = {
+    //   viewingDates: viewingDates,
+    //   auctionDates: auctionDates
+    // }
+
+    // let saleDates = [1,2,3]
+    
+    let saleDates = {}
 
     return (
       <div className="Sample">
