@@ -347,6 +347,7 @@ export default class Calendar extends Component {
             showNeighboringMonth={this.props.showNeighboringMonth}
             showWeekNumbers={this.props.showWeekNumbers}
             saleDates={this.getSaleDates()}
+            legend={this.getLegend()}
             {...commonProps}
           />
         );
@@ -355,8 +356,19 @@ export default class Calendar extends Component {
     }
   }
 
+  getLegend() {
+    const {
+      legend = {
+        preview: 'Preview',
+        auction: 'Auction'
+      }
+    } = this.props
+
+    return legend
+  }
+
   getSaleDates() {
-    let {
+    const {
       saleDates = {
         viewingDates: [],
         auctionDates: []

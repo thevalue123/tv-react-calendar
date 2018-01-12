@@ -101,6 +101,40 @@
         }        
       }
     }
+
+    &__legend {
+      text-align: center;
+      padding-bottom: 10px;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+        li {
+          float: left;
+          padding: 0 5px;          
+        }
+      }
+
+      &-viewing-dot {
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background-color: #A5DEE4;
+        display: inline-block;
+        margin: 0 2px;
+      }
+
+      &-auction-dot {
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background-color: #E87A90;
+        display: inline-block;
+        margin: 0 2px;
+      }
+    }
   }
 
   &__year-view,
@@ -157,11 +191,5 @@
         background-color: rgb(230, 230, 230);
       }
     }
-  }
-}
- }
-  }
-}
-
   }
 }

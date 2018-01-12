@@ -81,6 +81,36 @@
   display: inline-block;
   margin: 0 2px;
 }
+.react-calendar__month-view__legend {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.react-calendar__month-view__legend ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+}
+.react-calendar__month-view__legend ul li {
+  float: left;
+  padding: 0 5px;
+}
+.react-calendar__month-view__legend-viewing-dot {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #A5DEE4;
+  display: inline-block;
+  margin: 0 2px;
+}
+.react-calendar__month-view__legend-auction-dot {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #E87A90;
+  display: inline-block;
+  margin: 0 2px;
+}
 .react-calendar__year-view .react-calendar__tile,
 .react-calendar__decade-view .react-calendar__tile,
 .react-calendar__century-view .react-calendar__tile {

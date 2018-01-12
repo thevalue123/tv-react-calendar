@@ -86,6 +86,12 @@ export default class MonthView extends PureComponent {
             {this.renderDays()}
           </div>
         </div>
+        <div className="react-calendar__month-view__legend">
+          <ul>
+            <li><span className="react-calendar__month-view__legend-viewing-dot"></span> {this.props.legend.preview}</li>
+            <li><span className="react-calendar__month-view__legend-auction-dot"></span> {this.props.legend.auction}</li>
+          </ul>
+        </div>
       </div>
     );
   }

@@ -120,6 +120,28 @@ var MonthView = function (_PureComponent) {
             this.renderWeekdays(),
             this.renderDays()
           )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'react-calendar__month-view__legend' },
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement('span', { className: 'react-calendar__month-view__legend-viewing-dot' }),
+              ' ',
+              this.props.legend.preview
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement('span', { className: 'react-calendar__month-view__legend-auction-dot' }),
+              ' ',
+              this.props.legend.auction
+            )
+          )
         )
       );
     }

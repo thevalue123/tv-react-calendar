@@ -22,6 +22,11 @@ export default class Sample extends Component {
       auctionDates: auctionDates
     }
 
+    let legend = {
+      preview: 'Preview1',
+      auction: 'Auction2'
+    }
+
     return (
       <div className="Sample">
         <header>
@@ -34,6 +39,7 @@ export default class Sample extends Component {
               showWeekNumbers
               value={value}
               saleDates={saleDates}
+              legend={legend}
             />
           </main>
         </div>

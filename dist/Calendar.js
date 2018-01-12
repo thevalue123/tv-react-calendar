@@ -386,11 +386,24 @@ var Calendar = function (_Component) {
             onClickWeekNumber: this.props.onClickWeekNumber,
             showNeighboringMonth: this.props.showNeighboringMonth,
             showWeekNumbers: this.props.showWeekNumbers,
-            saleDates: this.getSaleDates()
+            saleDates: this.getSaleDates(),
+            legend: this.getLegend()
           }, commonProps));
         default:
           throw new Error('Invalid view: ' + view + '.');
       }
+    }
+  }, {
+    key: 'getLegend',
+    value: function getLegend() {
+      var _props$legend = this.props.legend,
+          legend = _props$legend === undefined ? {
+        preview: 'Preview',
+        auction: 'Auction'
+      } : _props$legend;
+
+
+      return legend;
     }
   }, {
     key: 'getSaleDates',
