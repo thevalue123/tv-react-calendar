@@ -90,6 +90,7 @@ export default class MonthView extends PureComponent {
           <ul>
             <li><span className="react-calendar__month-view__legend-viewing-dot"></span> {this.props.legend.preview}</li>
             <li><span className="react-calendar__month-view__legend-auction-dot"></span> {this.props.legend.auction}</li>
+            <li><span className="react-calendar__month-view__legend-event-dot"></span> {this.props.legend.event}</li>
           </ul>
         </div>
       </div>
