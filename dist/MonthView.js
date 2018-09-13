@@ -140,6 +140,13 @@ var MonthView = function (_PureComponent) {
               _react2.default.createElement('span', { className: 'react-calendar__month-view__legend-auction-dot' }),
               ' ',
               this.props.legend.auction
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement('span', { className: 'react-calendar__month-view__legend-event-dot' }),
+              ' ',
+              this.props.legend.event
             )
           )
         )
