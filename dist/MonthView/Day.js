@@ -66,7 +66,8 @@ var Day = function Day(_ref) {
         'div',
         { className: 'react-calendar__month-view__days__day--dot' },
         showDot('viewing', salesDots.showPreviewDot),
-        showDot('auction', salesDots.showAuctionDot)
+        showDot('auction', salesDots.showAuctionDot),
+        showDot('event', salesDots.showEventDot)
       )
     ),
     typeof tileContent === 'function' ? tileContent({ date: date, view: 'month' }) : tileContent

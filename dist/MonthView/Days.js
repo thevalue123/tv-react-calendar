@@ -82,10 +82,12 @@ var Days = function (_PureComponent) {
 
         var showPreviewDot = saleDates.viewingDates.indexOf(calendar_date) != -1 ? true : false;
         var showAuctionDot = saleDates.auctionDates.indexOf(calendar_date) != -1 ? true : false;
+        var showEventDot = saleDates.eventDates.indexOf(calendar_date) != -1 ? true : false;
 
         var salesDots = {
           showPreviewDot: showPreviewDot,
-          showAuctionDot: showAuctionDot
+          showAuctionDot: showAuctionDot,
+          showEventDot: showEventDot
         };
 
         days.push(_react2.default.createElement(_Day2.default, _extends({
