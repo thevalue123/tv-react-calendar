@@ -90,11 +90,13 @@ export default class Days extends PureComponent {
       let calendar_date = moment(date).format('YYYY-MM-DD')
 
       let showPreviewDot = saleDates.viewingDates.indexOf(calendar_date) != -1 ? true:false
-      let showAuctionDot = saleDates.auctionDates.indexOf(calendar_date) != -1 ? true:false        
+      let showAuctionDot = saleDates.auctionDates.indexOf(calendar_date) != -1 ? true:false  
+      let showEventDot = saleDates.eventDates.indexOf(calendar_date) != -1 ? true:false        
 
       let salesDots = {
         showPreviewDot: showPreviewDot,
-        showAuctionDot: showAuctionDot
+        showAuctionDot: showAuctionDot,
+        showEventDot: showEventDot
       }
 
       days.push(

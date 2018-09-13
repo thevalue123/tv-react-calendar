@@ -50,6 +50,7 @@ const Day = ({
       <div className="react-calendar__month-view__days__day--dot">
         {showDot('viewing', salesDots.showPreviewDot)}
         {showDot('auction', salesDots.showAuctionDot)}
+        {showDot('event', salesDots.showEventDot)}
       </div>
     </time>
     {typeof tileContent === 'function' ? tileContent({ date, view: 'month' }) : tileContent}
